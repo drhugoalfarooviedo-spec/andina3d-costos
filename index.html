@@ -1,143 +1,51 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111827">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="icon-192.png">
-<title>ANDINA 3D Costos</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>ANDINA 3D Costos</title>
 <style>
-:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#111827;background:#f3f4f6}*{box-sizing:border-box}body{margin:0}.app{max-width:560px;margin:auto;padding:18px 14px 40px}.brand{font-size:12px;letter-spacing:.18em;color:#6b7280;font-weight:800}.head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}h1{font-size:24px;margin:3px 0}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:16px;margin:12px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:13px;font-weight:700;display:block}input,select,button,textarea{font:inherit;font-size:16px}input,select,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:12px;margin-top:6px;background:#fff}button{border:1px solid #d1d5db;background:#fff;border-radius:12px;padding:11px 12px;font-weight:800;cursor:pointer}.price{font-size:38px;font-weight:850;margin:3px 0}.muted{color:#6b7280;font-size:13px}.row{display:flex;justify-content:space-between;gap:15px;padding:7px 0}.total{border-top:1px solid #e5e7eb;margin-top:8px;padding-top:13px;font-size:17px}.hidden{display:none!important}.full{grid-column:1/-1}.note{font-size:12px;color:#6b7280}.install{width:100%;background:#111827;color:#fff;border-color:#111827;margin-top:8px}.status{text-align:center;margin-top:12px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.primary{background:#f97316;color:#fff;border-color:#f97316}.dark{background:#111827;color:#fff;border-color:#111827}.sectionTitle{font-size:18px;margin:0 0 10px}.order{border-top:1px solid #e5e7eb;padding:13px 0}.order:first-of-type{border-top:0}.orderTop{display:flex;justify-content:space-between;gap:10px}.pill{font-size:12px;font-weight:800;background:#f3f4f6;border-radius:999px;padding:5px 8px;white-space:nowrap}.orderBtns{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:9px}.danger{color:#b91c1c}.modal{position:fixed;inset:0;background:#0008;display:flex;align-items:flex-end;justify-content:center;padding:12px;z-index:20}.modalBox{background:#fff;border-radius:20px 20px 14px 14px;padding:18px;width:min(560px,100%);max-height:92vh;overflow:auto}.modalHead{display:flex;justify-content:space-between;align-items:center}.modalHead h2{margin:0;font-size:20px}.close{border:0;font-size:22px;padding:5px 9px}.kpi{background:#f9fafb;border-radius:12px;padding:10px;margin-top:10px}.kpi strong{font-size:18px}@media(max-width:390px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.price{font-size:34px}.actions{grid-template-columns:1fr}}
-</style>
-</head>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#111827;background:#f3f4f6}*{box-sizing:border-box}body{margin:0}.app{max-width:560px;margin:auto;padding:18px 14px 40px}.brand{font-size:12px;letter-spacing:.18em;color:#6b7280;font-weight:800}.head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}h1{font-size:24px;margin:3px 0}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:16px;margin:12px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:13px;font-weight:700;display:block}input,select,button,textarea{font:inherit;font-size:16px}input,select,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:12px;margin-top:6px;background:#fff}button{border:1px solid #d1d5db;background:#fff;border-radius:12px;padding:11px 12px;font-weight:800;cursor:pointer}.price{font-size:38px;font-weight:850;margin:3px 0}.muted{color:#6b7280;font-size:13px}.row{display:flex;justify-content:space-between;gap:15px;padding:7px 0}.total{border-top:1px solid #e5e7eb;margin-top:8px;padding-top:13px;font-size:17px}.hidden{display:none!important}.full{grid-column:1/-1}.note{font-size:12px;color:#6b7280}.install,.primary{background:#f97316;color:#fff;border-color:#f97316}.install{width:100%;margin-top:8px}.dark{background:#111827;color:#fff;border-color:#111827}.status{text-align:center;margin-top:12px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.sectionTitle{font-size:18px;margin:0 0 10px}.order{border-top:1px solid #e5e7eb;padding:13px 0}.order:first-of-type{border-top:0}.orderTop{display:flex;justify-content:space-between;gap:10px}.pill{font-size:12px;font-weight:800;background:#f3f4f6;border-radius:999px;padding:5px 8px;white-space:nowrap}.orderBtns{display:grid;grid-template-columns:1fr auto auto;gap:8px;margin-top:9px}.danger{color:#b91c1c}.modal{position:fixed;inset:0;background:#0008;display:flex;align-items:flex-end;justify-content:center;padding:12px;z-index:20}.modalBox{background:#fff;border-radius:20px 20px 14px 14px;padding:18px;width:min(560px,100%);max-height:92vh;overflow:auto}.modalHead{display:flex;justify-content:space-between;align-items:center}.modalHead h2{margin:0;font-size:20px}.close{border:0;font-size:22px;padding:5px 9px}.kpi{background:#f9fafb;border-radius:12px;padding:10px;margin-top:10px}.auth{max-width:430px;margin:8vh auto;padding:14px}.authLogo{text-align:center;margin-bottom:20px}.authLogo h1{font-size:30px}.error{color:#b91c1c;font-size:13px;margin-top:10px}.sync{font-size:12px;color:#059669;font-weight:700}.logout{padding:8px 10px;font-size:13px}.editGrid{margin-top:12px}@media(max-width:390px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.price{font-size:34px}.actions{grid-template-columns:1fr}.orderBtns{grid-template-columns:1fr 1fr}.orderBtns select{grid-column:1/-1}}
+</style></head>
 <body>
-<main class="app">
-<div class="head"><div><div class="brand">ANDINA 3D</div><h1>Calculadora de costos</h1></div><button id="settingsBtn">⚙ Config.</button></div>
-
-<section class="card"><div class="grid">
-<label class="full">Producto / trabajo<input id="product" type="text" placeholder="Ej. Llavero personalizado"></label>
-<label class="full">Impresora<select id="printer"><option value="bambu">Bambu Lab A1 Combo</option><option value="spark">Creality SPARKX i7</option></select></label>
-<label>Filamento Bs/kg<input id="filament" type="number" min="0" step="1" value="150"></label>
-<label>Material usado (g)<input id="grams" type="number" min="0" step="0.1" value="100"></label>
-<label>Horas<input id="hours" type="number" min="0" step="1" value="3"></label>
-<label>Minutos<input id="minutes" type="number" min="0" max="59" step="1" value="0"></label>
-<label>Mano de obra (Bs)<input id="labor" type="number" min="0" step="0.5" value="0"></label>
-<label>Ganancia (%)<input id="margin" type="number" min="0" step="5" value="50"></label>
-</div></section>
-
-<section class="card">
-<div class="muted">PRECIO DE VENTA SUGERIDO</div><div id="sale" class="price">Bs 0,00</div><div id="summary" class="muted"></div>
-<div style="margin-top:14px">
-<div class="row"><span>Filamento</span><strong id="mat"></strong></div>
-<div class="row"><span>Uso de impresora</span><strong id="machine"></strong></div>
-<div class="row"><span>Electricidad</span><strong id="power"></strong></div>
-<div class="row"><span>Mano de obra</span><strong id="laborOut"></strong></div>
-<div class="row total"><strong>Costo de producción</strong><strong id="cost"></strong></div>
-<div class="row"><span>Ganancia estimada</span><strong id="profit"></strong></div>
-</div></section>
-
+<section id="authScreen" class="auth hidden"><div class="card"><div class="authLogo"><div class="brand">ANDINA 3D</div><h1>Costos y pedidos</h1><div class="muted">Inicia sesión para sincronizar tus pedidos.</div></div><label>Correo<input id="loginEmail" type="email" autocomplete="username" placeholder="tu@email.com"></label><label style="margin-top:12px">Contraseña<input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••"></label><button id="loginBtn" class="dark" style="width:100%;margin-top:16px">Iniciar sesión</button><div id="loginError" class="error"></div></div></section>
+<main id="mainApp" class="app hidden">
+<div class="head"><div><div class="brand">ANDINA 3D</div><h1>Calculadora de costos</h1><div id="syncState" class="sync">● Sincronizado</div></div><div><button id="settingsBtn">⚙ Config.</button> <button id="logoutBtn" class="logout">Salir</button></div></div>
+<section class="card"><div class="grid"><label class="full">Producto / trabajo<input id="product" type="text" placeholder="Ej. Llavero personalizado"></label><label class="full">Impresora<select id="printer"><option value="bambu">Bambu Lab A1 Combo</option><option value="spark">Creality SPARKX i7</option></select></label><label>Filamento Bs/kg<input id="filament" type="number" min="0" step="1" value="150"></label><label>Material usado (g)<input id="grams" type="number" min="0" step="0.1" value="100"></label><label>Horas<input id="hours" type="number" min="0" step="1" value="3"></label><label>Minutos<input id="minutes" type="number" min="0" max="59" step="1" value="0"></label><label>Mano de obra (Bs)<input id="labor" type="number" min="0" step="0.5" value="0"></label><label>Ganancia (%)<input id="margin" type="number" min="0" step="5" value="50"></label></div></section>
+<section class="card"><div class="muted">PRECIO DE VENTA SUGERIDO</div><div id="sale" class="price">Bs 0,00</div><div id="summary" class="muted"></div><div style="margin-top:14px"><div class="row"><span>Filamento</span><strong id="mat"></strong></div><div class="row"><span>Uso de impresora</span><strong id="machine"></strong></div><div class="row"><span>Electricidad</span><strong id="power"></strong></div><div class="row"><span>Mano de obra</span><strong id="laborOut"></strong></div><div class="row total"><strong>Costo de producción</strong><strong id="cost"></strong></div><div class="row"><span>Ganancia estimada</span><strong id="profit"></strong></div></div></section>
 <div class="actions"><button id="confirmBtn" class="primary">✓ Confirmar pedido</button><button id="newBtn" class="dark">＋ Nueva cotización</button></div>
-
-<section id="ordersCard" class="card">
-<div class="head" style="margin:0"><div><div class="brand">ANDINA 3D</div><h2 class="sectionTitle">Pedidos</h2></div><strong id="pendingCount"></strong></div>
-<div id="orders"></div>
-</section>
-
-<section id="settings" class="card hidden"><h2 class="sectionTitle">Configuración</h2><div class="grid">
-<label>Bambu — precio Bs<input id="bambuPrice" type="number" value="7500"></label>
-<label>SPARKX — precio Bs<input id="sparkPrice" type="number" value="6500"></label>
-<label>Vida útil (h)<input id="life" type="number" value="4000"></label>
-<label>Electricidad Bs/kWh<input id="kwhPrice" type="number" step=".001" value="1.242"></label>
-<label>Bambu consumo kW<input id="bambuKw" type="number" step=".01" value="0.10"></label>
-<label>SPARKX consumo kW<input id="sparkKw" type="number" step=".01" value="0.10"></label>
-</div><p class="note">Los consumos son valores iniciales editables; puedes reemplazarlos por mediciones reales.</p></section>
-
-<button id="installBtn" class="install hidden">Instalar ANDINA 3D Costos</button>
-<div id="status" class="muted status">Los pedidos y la configuración se guardan en este dispositivo.</div>
-</main>
-
-<div id="modal" class="modal hidden"><div class="modalBox">
-<div class="modalHead"><h2>Confirmar pedido</h2><button id="closeModal" class="close">×</button></div>
-<div class="grid" style="margin-top:12px">
-<label class="full">Cliente<input id="client" type="text" placeholder="Nombre del cliente"></label>
-<label>Producto<input id="orderProduct" type="text"></label>
-<label>Cantidad<input id="qty" type="number" min="1" step="1" value="1"></label>
-<label>Fecha de entrega<input id="delivery" type="date"></label>
-<label>Precio acordado por unidad (Bs)<input id="agreed" type="number" min="0" step=".5"></label>
-<label class="full">Observación (opcional)<textarea id="notes" rows="2" placeholder="Color, acabado, adelanto, etc."></textarea></label>
-</div>
-<div class="kpi"><div class="muted">RESUMEN DEL PEDIDO</div><div class="row"><span>Costo total estimado</span><strong id="orderCost"></strong></div><div class="row"><span>Venta total</span><strong id="orderSale"></strong></div><div class="row"><span>Ganancia estimada</span><strong id="orderProfit"></strong></div></div>
-<button id="saveOrder" class="primary" style="width:100%;margin-top:12px">Guardar pedido confirmado</button>
-</div></div>
-
-<script>
-const $=id=>document.getElementById(id), n=id=>Math.max(0,Number($(id).value)||0);
-const money=x=>'Bs '+Number(x||0).toLocaleString('es-BO',{minimumFractionDigits:2,maximumFractionDigits:2});
-const settingsIds=['printer','filament','bambuPrice','sparkPrice','life','kwhPrice','bambuKw','sparkKw'];
-const quoteIds=['product','grams','hours','minutes','labor','margin'];
-let current={};
-
-function saveSettings(){const s={};settingsIds.forEach(id=>s[id]=$(id).value);localStorage.setItem('andina3d-settings-v2',JSON.stringify(s))}
-function loadSettings(){try{const s=JSON.parse(localStorage.getItem('andina3d-settings-v2')||localStorage.getItem('andina3d-costos')||'{}');settingsIds.forEach(id=>{if(s[id]!=null)$(id).value=s[id]}); if(s.margin!=null)$('margin').value=s.margin}catch(e){}}
-function calc(){
- const p=$('printer').value,t=n('hours')+Math.min(59,n('minutes'))/60,grams=n('grams');
- const material=grams/1000*n('filament'),life=Math.max(1,n('life'));
- const pp=p==='bambu'?n('bambuPrice'):n('sparkPrice'),kw=p==='bambu'?n('bambuKw'):n('sparkKw');
- const machine=t*pp/life,power=t*kw*n('kwhPrice'),labor=n('labor'),cost=material+machine+power+labor;
- const profit=cost*n('margin')/100,sale=cost+profit;
- current={printer:p,printerName:p==='bambu'?'Bambu Lab A1 Combo':'Creality SPARKX i7',time:t,grams,material,machine,power,labor,cost,profit,sale,margin:n('margin'),filament:n('filament')};
- $('mat').textContent=money(material);$('machine').textContent=money(machine);$('power').textContent=money(power);$('laborOut').textContent=money(labor);$('cost').textContent=money(cost);$('profit').textContent=money(profit);$('sale').textContent=money(sale);
- $('summary').textContent=current.printerName+' · '+t.toFixed(2)+' h · '+grams.toFixed(1)+' g';
- saveSettings();
-}
-loadSettings();
-[...settingsIds,...quoteIds].forEach(id=>$(id).addEventListener('input',calc));
-$('settingsBtn').onclick=()=>$('settings').classList.toggle('hidden');
-
-function newQuote(){
- $('product').value='';$('grams').value='0';$('hours').value='0';$('minutes').value='0';$('labor').value='0';
- calc();$('product').focus();window.scrollTo({top:0,behavior:'smooth'});
-}
-$('newBtn').onclick=()=>{if(confirm('¿Iniciar una nueva cotización?'))newQuote()};
-
-function openOrder(){
- calc(); $('orderProduct').value=$('product').value||'Trabajo 3D'; $('qty').value=1;
- $('agreed').value=current.sale.toFixed(2); $('client').value=''; $('delivery').value=''; $('notes').value='';
- updateOrderPreview(); $('modal').classList.remove('hidden');
-}
-function updateOrderPreview(){
- const q=Math.max(1,Math.floor(n('qty')||1)), price=n('agreed'), cost=current.cost*q, sale=price*q;
- $('orderCost').textContent=money(cost);$('orderSale').textContent=money(sale);$('orderProfit').textContent=money(sale-cost);
-}
-$('confirmBtn').onclick=openOrder;$('closeModal').onclick=()=>$('modal').classList.add('hidden');
-['qty','agreed'].forEach(id=>$(id).addEventListener('input',updateOrderPreview));
-
-function getOrders(){try{return JSON.parse(localStorage.getItem('andina3d-orders-v2')||'[]')}catch(e){return[]}}
-function setOrders(v){localStorage.setItem('andina3d-orders-v2',JSON.stringify(v))}
-$('saveOrder').onclick=()=>{
- const q=Math.max(1,Math.floor(n('qty')||1)), price=n('agreed');
- const order={id:Date.now(),created:new Date().toISOString(),client:$('client').value.trim()||'Sin nombre',product:$('orderProduct').value.trim()||'Trabajo 3D',qty:q,delivery:$('delivery').value,unitPrice:price,totalSale:price*q,totalCost:current.cost*q,totalProfit:(price-current.cost)*q,status:'Confirmado',notes:$('notes').value.trim(),tech:{...current}};
- const orders=getOrders();orders.unshift(order);setOrders(orders);$('modal').classList.add('hidden');renderOrders();newQuote();
-};
-const states=['Confirmado','En producción','Terminado','Entregado','Pagado'];
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-function renderOrders(){
- const orders=getOrders(),box=$('orders'); $('pendingCount').textContent=orders.filter(o=>o.status!=='Pagado').length+' pendientes';
- if(!orders.length){box.innerHTML='<p class="muted">Aún no tienes pedidos confirmados.</p>';return}
- box.innerHTML=orders.map(o=>`<div class="order">
- <div class="orderTop"><div><strong>${esc(o.qty)} × ${esc(o.product)}</strong><div class="muted">${esc(o.client)}${o.delivery?' · Entrega '+new Date(o.delivery+'T12:00:00').toLocaleDateString('es-BO'):''}</div></div><span class="pill">${esc(o.status)}</span></div>
- <div class="row"><span>Venta</span><strong>${money(o.totalSale)}</strong></div><div class="row"><span>Ganancia estimada</span><strong>${money(o.totalProfit)}</strong></div>
- <div class="orderBtns"><select onchange="changeStatus(${o.id},this.value)">${states.map(s=>`<option ${s===o.status?'selected':''}>${s}</option>`).join('')}</select><button class="danger" onclick="deleteOrder(${o.id})">Eliminar</button></div>
- </div>`).join('');
-}
-window.changeStatus=(id,status)=>{const a=getOrders(),o=a.find(x=>x.id===id);if(o){o.status=status;setOrders(a);renderOrders()}};
-window.deleteOrder=id=>{if(confirm('¿Eliminar este pedido?')){setOrders(getOrders().filter(x=>x.id!==id));renderOrders()}};
-renderOrders();calc();
-
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js');
-let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('installBtn').classList.remove('hidden')});
-$('installBtn').onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('installBtn').classList.add('hidden')};
-window.addEventListener('appinstalled',()=>{$('status').textContent='Aplicación instalada.'});
-</script>
-</body></html>
+<section class="card"><div class="head" style="margin:0"><div><div class="brand">ANDINA 3D</div><h2 class="sectionTitle">Pedidos</h2></div><strong id="pendingCount"></strong></div><div id="orders"></div></section>
+<section id="settings" class="card hidden"><h2 class="sectionTitle">Configuración</h2><div class="grid"><label>Bambu — precio Bs<input id="bambuPrice" type="number" value="7500"></label><label>SPARKX — precio Bs<input id="sparkPrice" type="number" value="6500"></label><label>Vida útil (h)<input id="life" type="number" value="4000"></label><label>Electricidad Bs/kWh<input id="kwhPrice" type="number" step=".001" value="1.242"></label><label>Bambu consumo kW<input id="bambuKw" type="number" step=".01" value="0.10"></label><label>SPARKX consumo kW<input id="sparkKw" type="number" step=".01" value="0.10"></label></div><p class="note">La configuración de cálculo queda guardada en este dispositivo. Los pedidos se sincronizan en Supabase.</p></section>
+<button id="installBtn" class="install hidden">Instalar ANDINA 3D Costos</button><div id="status" class="muted status">Pedidos sincronizados entre tus dispositivos.</div></main>
+<div id="modal" class="modal hidden"><div class="modalBox"><div class="modalHead"><h2>Confirmar pedido</h2><button id="closeModal" class="close">×</button></div><div class="grid" style="margin-top:12px"><label class="full">Cliente<input id="client" type="text" placeholder="Nombre del cliente"></label><label>Producto<input id="orderProduct" type="text"></label><label>Cantidad<input id="qty" type="number" min="1" step="1" value="1"></label><label>Fecha de entrega<input id="delivery" type="date"></label><label>Precio acordado por unidad (Bs)<input id="agreed" type="number" min="0" step=".5"></label><label class="full">Observación (opcional)<textarea id="notes" rows="2"></textarea></label></div><div class="kpi"><div class="muted">RESUMEN DEL PEDIDO</div><div class="row"><span>Costo total estimado</span><strong id="orderCost"></strong></div><div class="row"><span>Venta total</span><strong id="orderSale"></strong></div><div class="row"><span>Ganancia estimada</span><strong id="orderProfit"></strong></div></div><button id="saveOrder" class="primary" style="width:100%;margin-top:12px">Guardar pedido confirmado</button></div></div>
+<div id="editModal" class="modal hidden"><div class="modalBox"><div class="modalHead"><h2>Editar pedido</h2><button id="closeEdit" class="close">×</button></div><input id="editId" type="hidden"><div class="grid editGrid"><label class="full">Cliente<input id="editClient"></label><label>Producto<input id="editProduct"></label><label>Cantidad<input id="editQty" type="number" min="1"></label><label>Fecha de entrega<input id="editDelivery" type="date"></label><label>Precio por unidad (Bs)<input id="editPrice" type="number" min="0" step=".5"></label><label>Estado<select id="editStatus"><option>Confirmado</option><option>En producción</option><option>Terminado</option><option>Entregado</option><option>Pagado</option></select></label><label>Gramos cotizados<input id="editGrams" type="number" min="0" step=".1"></label><label>Horas cotizadas<input id="editHours" type="number" min="0" step=".01"></label><label>Costo unitario cotizado (Bs)<input id="editUnitCost" type="number" min="0" step=".01"></label><label>Gramos reales<input id="editRealGrams" type="number" min="0" step=".1"></label><label>Horas reales<input id="editRealHours" type="number" min="0" step=".01"></label><label>Costo real total (Bs)<input id="editRealCost" type="number" min="0" step=".01"></label><label class="full">Observaciones<textarea id="editNotes" rows="3"></textarea></label></div><button id="saveEdit" class="primary" style="width:100%;margin-top:12px">Guardar cambios</button></div></div>
+<script type="module">
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+const SUPABASE_URL='https://ephxajyiczfqtrbgewmj.supabase.co';
+const SUPABASE_KEY='sb_publishable_WeBmpBvJsjpDPKxlNrp2Ng_cAr1zJGs';
+const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
+const $=id=>document.getElementById(id), n=id=>Math.max(0,Number($(id).value)||0), money=x=>'Bs '+Number(x||0).toLocaleString('es-BO',{minimumFractionDigits:2,maximumFractionDigits:2});
+const settingsIds=['printer','filament','bambuPrice','sparkPrice','life','kwhPrice','bambuKw','sparkKw'], quoteIds=['product','grams','hours','minutes','labor','margin']; let current={},orders=[];
+function saveSettings(){const s={};settingsIds.forEach(id=>s[id]=$(id).value);s.margin=$('margin').value;localStorage.setItem('andina3d-settings-v2',JSON.stringify(s))}
+function loadSettings(){try{const s=JSON.parse(localStorage.getItem('andina3d-settings-v2')||'{}');settingsIds.forEach(id=>{if(s[id]!=null)$(id).value=s[id]});if(s.margin!=null)$('margin').value=s.margin}catch{}}
+function calc(){const p=$('printer').value,t=n('hours')+Math.min(59,n('minutes'))/60,grams=n('grams'),material=grams/1000*n('filament'),life=Math.max(1,n('life')),pp=p==='bambu'?n('bambuPrice'):n('sparkPrice'),kw=p==='bambu'?n('bambuKw'):n('sparkKw'),machine=t*pp/life,power=t*kw*n('kwhPrice'),labor=n('labor'),cost=material+machine+power+labor,profit=cost*n('margin')/100,sale=cost+profit;current={printerName:p==='bambu'?'Bambu Lab A1 Combo':'Creality SPARKX i7',time:t,grams,material,machine,power,labor,cost,profit,sale,margin:n('margin'),filament:n('filament')};$('mat').textContent=money(material);$('machine').textContent=money(machine);$('power').textContent=money(power);$('laborOut').textContent=money(labor);$('cost').textContent=money(cost);$('profit').textContent=money(profit);$('sale').textContent=money(sale);$('summary').textContent=current.printerName+' · '+t.toFixed(2)+' h · '+grams.toFixed(1)+' g';saveSettings()}
+function syncMsg(t,ok=true){$('syncState').textContent=(ok?'● ':'⚠ ')+t;$('syncState').style.color=ok?'#059669':'#b45309'}
+async function loadOrders(){syncMsg('Sincronizando…');const {data,error}=await supabase.from('pedidos').select('*').order('creado_en',{ascending:false});if(error){syncMsg('Error de sincronización',false);console.error(error);return}orders=data||[];renderOrders();syncMsg('Sincronizado')}
+async function migrateLocal(){if(localStorage.getItem('andina3d-cloud-migrated'))return;let old=[];try{old=JSON.parse(localStorage.getItem('andina3d-orders-v2')||'[]')}catch{}if(!old.length){localStorage.setItem('andina3d-cloud-migrated','1');return}const rows=old.map(o=>({cliente:o.client||'Sin nombre',producto:o.product||'Trabajo 3D',cantidad:o.qty||1,fecha_entrega:o.delivery||null,estado:o.status||'Confirmado',observaciones:o.notes||null,impresora:o.tech?.printerName||null,gramos_cotizados:o.tech?.grams||0,horas_cotizadas:o.tech?.time||0,costo_filamento_kg:o.tech?.filament||0,costo_material_cotizado:o.tech?.material||0,costo_impresora_cotizado:o.tech?.machine||0,costo_electricidad_cotizado:o.tech?.power||0,mano_obra_cotizada:o.tech?.labor||0,costo_unitario_cotizado:o.tech?.cost||0,precio_unitario_acordado:o.unitPrice||0,costo_total_cotizado:o.totalCost||0,venta_total:o.totalSale||0,ganancia_estimada:o.totalProfit||0}));const {error}=await supabase.from('pedidos').insert(rows);if(!error)localStorage.setItem('andina3d-cloud-migrated','1')}
+async function showSession(){const {data:{session}}=await supabase.auth.getSession();if(session){$('authScreen').classList.add('hidden');$('mainApp').classList.remove('hidden');await migrateLocal();await loadOrders()}else{$('mainApp').classList.add('hidden');$('authScreen').classList.remove('hidden')}}
+$('loginBtn').onclick=async()=>{$('loginError').textContent='';$('loginBtn').disabled=true;const {error}=await supabase.auth.signInWithPassword({email:$('loginEmail').value.trim(),password:$('loginPassword').value});$('loginBtn').disabled=false;if(error){$('loginError').textContent='No se pudo iniciar sesión. Revisa correo y contraseña.';return}await showSession()};
+$('loginPassword').addEventListener('keydown',e=>{if(e.key==='Enter')$('loginBtn').click()});$('logoutBtn').onclick=async()=>{await supabase.auth.signOut();await showSession()};
+loadSettings();[...settingsIds,...quoteIds].forEach(id=>$(id).addEventListener('input',calc));$('settingsBtn').onclick=()=>$('settings').classList.toggle('hidden');
+function newQuote(){$('product').value='';$('grams').value='0';$('hours').value='0';$('minutes').value='0';$('labor').value='0';calc();$('product').focus();window.scrollTo({top:0,behavior:'smooth'})}$('newBtn').onclick=()=>{if(confirm('¿Iniciar una nueva cotización?'))newQuote()};
+function openOrder(){calc();$('orderProduct').value=$('product').value||'Trabajo 3D';$('qty').value=1;$('agreed').value=current.sale.toFixed(2);$('client').value='';$('delivery').value='';$('notes').value='';updateOrderPreview();$('modal').classList.remove('hidden')}
+function updateOrderPreview(){const q=Math.max(1,Math.floor(n('qty')||1)),price=n('agreed'),cost=current.cost*q,sale=price*q;$('orderCost').textContent=money(cost);$('orderSale').textContent=money(sale);$('orderProfit').textContent=money(sale-cost)}
+$('confirmBtn').onclick=openOrder;$('closeModal').onclick=()=>$('modal').classList.add('hidden');['qty','agreed'].forEach(id=>$(id).addEventListener('input',updateOrderPreview));
+$('saveOrder').onclick=async()=>{const q=Math.max(1,Math.floor(n('qty')||1)),price=n('agreed'),row={cliente:$('client').value.trim()||'Sin nombre',producto:$('orderProduct').value.trim()||'Trabajo 3D',cantidad:q,fecha_entrega:$('delivery').value||null,estado:'Confirmado',observaciones:$('notes').value.trim()||null,impresora:current.printerName,gramos_cotizados:current.grams,horas_cotizadas:current.time,costo_filamento_kg:current.filament,costo_material_cotizado:current.material,costo_impresora_cotizado:current.machine,costo_electricidad_cotizado:current.power,mano_obra_cotizada:current.labor,costo_unitario_cotizado:current.cost,precio_unitario_acordado:price,costo_total_cotizado:current.cost*q,venta_total:price*q,ganancia_estimada:(price-current.cost)*q};$('saveOrder').disabled=true;const {error}=await supabase.from('pedidos').insert(row);$('saveOrder').disabled=false;if(error){alert('No se pudo guardar el pedido.');console.error(error);return}$('modal').classList.add('hidden');await loadOrders();newQuote()};
+const states=['Confirmado','En producción','Terminado','Entregado','Pagado'];function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function renderOrders(){$('pendingCount').textContent=orders.filter(o=>o.estado!=='Pagado').length+' pendientes';if(!orders.length){$('orders').innerHTML='<p class="muted">Aún no tienes pedidos confirmados.</p>';return}$('orders').innerHTML=orders.map(o=>`<div class="order"><div class="orderTop"><div><strong>${esc(o.cantidad)} × ${esc(o.producto)}</strong><div class="muted">${esc(o.cliente)}${o.fecha_entrega?' · Entrega '+new Date(o.fecha_entrega+'T12:00:00').toLocaleDateString('es-BO'):''}</div></div><span class="pill">${esc(o.estado)}</span></div><div class="row"><span>Venta</span><strong>${money(o.venta_total)}</strong></div><div class="row"><span>Ganancia estimada</span><strong>${money(o.ganancia_estimada)}</strong></div><div class="orderBtns"><select data-status="${o.id}">${states.map(s=>`<option ${s===o.estado?'selected':''}>${s}</option>`).join('')}</select><button data-edit="${o.id}">Editar</button><button class="danger" data-delete="${o.id}">Eliminar</button></div></div>`).join('');document.querySelectorAll('[data-status]').forEach(el=>el.onchange=()=>changeStatus(el.dataset.status,el.value));document.querySelectorAll('[data-edit]').forEach(el=>el.onclick=()=>openEdit(el.dataset.edit));document.querySelectorAll('[data-delete]').forEach(el=>el.onclick=()=>deleteOrder(el.dataset.delete))}
+async function changeStatus(id,estado){const {error}=await supabase.from('pedidos').update({estado}).eq('id',id);if(error){alert('No se pudo cambiar el estado.');await loadOrders();return}await loadOrders()}
+function openEdit(id){const o=orders.find(x=>String(x.id)===String(id));if(!o)return;$('editId').value=o.id;$('editClient').value=o.cliente||'';$('editProduct').value=o.producto||'';$('editQty').value=o.cantidad||1;$('editDelivery').value=o.fecha_entrega||'';$('editPrice').value=o.precio_unitario_acordado||0;$('editStatus').value=o.estado;$('editGrams').value=o.gramos_cotizados||0;$('editHours').value=o.horas_cotizadas||0;$('editUnitCost').value=o.costo_unitario_cotizado||0;$('editRealGrams').value=o.gramos_reales??'';$('editRealHours').value=o.horas_reales??'';$('editRealCost').value=o.costo_real??'';$('editNotes').value=o.observaciones||'';$('editModal').classList.remove('hidden')}
+$('closeEdit').onclick=()=>$('editModal').classList.add('hidden');$('saveEdit').onclick=async()=>{const id=$('editId').value,q=Math.max(1,Math.floor(n('editQty')||1)),price=n('editPrice'),unitCost=n('editUnitCost'),realCost=$('editRealCost').value===''?null:n('editRealCost'),row={cliente:$('editClient').value.trim()||'Sin nombre',producto:$('editProduct').value.trim()||'Trabajo 3D',cantidad:q,fecha_entrega:$('editDelivery').value||null,precio_unitario_acordado:price,estado:$('editStatus').value,gramos_cotizados:n('editGrams'),horas_cotizadas:n('editHours'),costo_unitario_cotizado:unitCost,costo_total_cotizado:unitCost*q,venta_total:price*q,ganancia_estimada:(price-unitCost)*q,gramos_reales:$('editRealGrams').value===''?null:n('editRealGrams'),horas_reales:$('editRealHours').value===''?null:n('editRealHours'),costo_real:realCost,ganancia_real:realCost===null?null:price*q-realCost,observaciones:$('editNotes').value.trim()||null};$('saveEdit').disabled=true;const {error}=await supabase.from('pedidos').update(row).eq('id',id);$('saveEdit').disabled=false;if(error){alert('No se pudieron guardar los cambios.');console.error(error);return}$('editModal').classList.add('hidden');await loadOrders()};
+async function deleteOrder(id){if(!confirm('¿Eliminar este pedido?'))return;const {error}=await supabase.from('pedidos').delete().eq('id',id);if(error){alert('No se pudo eliminar el pedido.');return}await loadOrders()}
+calc();showSession();supabase.auth.onAuthStateChange(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js');let deferredPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('installBtn').classList.remove('hidden')});$('installBtn').onclick=async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$('installBtn').classList.add('hidden')};
+</script></body></html>
