@@ -40,7 +40,15 @@ body{background:linear-gradient(180deg,#ebe7e0 0,#f7f5f2 36%,#f4f1ec 100%);color
 .bottomNav{background:rgba(18,18,18,.97);border-top-color:#302b27;box-shadow:0 -9px 25px #0002}.navBtn{color:#aaa;background:transparent;border:0}.navBtn.active{color:#ff7a2b;background:#ff650d12}.navIcon{width:22px;height:22px;display:flex!important;align-items:center;justify-content:center}.navIcon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.navBtn b{font-size:10px}.authLogo:before{content:"";display:block;width:130px;height:75px;margin:0 auto 8px;background:url('andina3d-logo.jpg') center/contain no-repeat}.authLogo .brand{display:none}
 @media(max-width:430px){.app{padding:0 10px 94px}.screenHero{margin:0 -10px 12px;padding-left:13px;padding-right:13px;min-height:108px}.screenHero .heroLogo{width:100px;height:57px}.screenHero .heroTitle{font-size:18px}.calcInputCard .grid{grid-template-columns:1fr 1fr}.calcInputCard .full{grid-column:1/-1}.realSalePanel{grid-template-columns:1fr 1fr}.searchRow{grid-template-columns:1fr}.searchRow button{width:100%}.orderBtns{grid-template-columns:1fr 1fr}.financeGrid.dashboard{grid-template-columns:1fr 1fr}}
 
-</style></head><body>
+</style>
+<style id="v121-actions-fix">
+/* v12.1: botones de cotización perfectamente simétricos en móvil */
+.actions.calcView{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;width:100%!important;margin:14px 0 18px!important}
+.actions.calcView #confirmBtn{grid-column:1 / -1!important;width:100%!important;min-height:54px!important;margin:0!important}
+.actions.calcView #proformaBtn,.actions.calcView #newBtn{grid-column:auto!important;width:100%!important;min-width:0!important;min-height:50px!important;margin:0!important;padding:10px 8px!important;font-size:13px!important;white-space:normal!important;line-height:1.15!important}
+@media(max-width:430px){.actions.calcView{grid-template-columns:1fr 1fr!important}.actions.calcView #confirmBtn{grid-column:1 / -1!important}.actions.calcView #proformaBtn,.actions.calcView #newBtn{grid-column:auto!important}}
+</style>
+</head><body>
 <section id="authScreen" class="auth hidden"><div class="card"><div class="authLogo"><div class="brand">ANDINA 3D</div><h1>Costos y pedidos</h1><div class="muted">Inicia sesión para sincronizar tus pedidos.</div></div><label>Correo<input id="loginEmail" type="email" autocomplete="username" placeholder="tu@email.com"></label><label style="margin-top:12px">Contraseña<input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••"></label><button id="loginBtn" class="dark" style="width:100%;margin-top:16px">Iniciar sesión</button><div id="loginError" class="error"></div></div></section>
 <main id="mainApp" class="app hidden" data-view="calc">
 <section class="screenHero calcView"><img src="andina3d-logo.jpg" class="heroLogo" alt="ANDINA 3D"><div class="heroText"><div class="heroTitle">Calculadora de costos</div><div class="heroSub">Cotiza rápido y controla tu rentabilidad</div><div id="syncState" class="sync">● Sincronizado</div></div><button id="logoutBtn" class="logout">Salir</button></section>
